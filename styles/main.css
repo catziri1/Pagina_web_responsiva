@@ -15,7 +15,7 @@ html, body {
 }
 
 .grid-r > div.col-3 {
-  width: 25%;
+  width: 40%;
 }
 
 .grid-r > div.col-6 {
@@ -37,7 +37,7 @@ html, body {
 }
 
 .grid-r > div.col-9 {
-  width: 75%;
+  width: 60%;
 }
 
 .navbar img {
@@ -107,8 +107,30 @@ html, body {
 }
 
 @media (min-width: 981px) {
-  .menu a:hover {
+  .navbar {
+    overflow: hidden;
+    background-color: #037ef3;
+    top: 0;
+  }
+
+  .navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    height: 40px;
+    line-height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  a:hover {
     color: #ffc845;
+  }
+
+  a.icon {
+    display: none;
   }
 
   video {
@@ -127,13 +149,35 @@ html, body {
     width: 75%;
   }
 }
-@media (min-width: 679px) {
-  a.icon {
-    display: none;
+@media (min-width: 741px) {
+  .navbar {
+    overflow: hidden;
+    background-color: #037ef3;
+    top: 0;
+  }
+
+  .navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    height: 40px;
+    line-height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  a:hover {
+    color: #ffc845;
   }
 
   video {
     width: 100%;
+  }
+
+  a.icon {
+    display: none;
   }
 
   .grid-r > div.col-3 {

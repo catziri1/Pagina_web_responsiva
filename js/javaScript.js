@@ -1,6 +1,10 @@
+var y = document.getElementById("menu");
+
 function myFunction2(x) {
     if (x.matches) { // If media query matches
         myFunction();
+    }else{
+      y.className="navbar";
     }
   }
   
@@ -10,7 +14,6 @@ function myFunction2(x) {
 
 
 function myFunction() {
-    var y = document.getElementById("menu");
     if (y.className === "menu") {
       y.className += " responsive";
     } else {
