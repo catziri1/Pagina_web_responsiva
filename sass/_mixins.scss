@@ -1,0 +1,21 @@
+// mobile devices
+@mixin mobile {
+    @media (min-width: #{$mobile}) {
+        @content;
+    }
+ }
+ 
+ // tablet devices
+ @mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+ }
+ 
+ // desktop devices
+ @mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+ }
+ 
