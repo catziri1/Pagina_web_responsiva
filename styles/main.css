@@ -1,3 +1,8 @@
+html, body {
+  margin: 0;
+  bottom: 0;
+}
+
 .grid-r {
   width: 100%;
 }
@@ -35,7 +40,45 @@
   width: 75%;
 }
 
+.navbar {
+  overflow: hidden;
+  background-color: #037ef3;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 25px;
+}
+
+img {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
+  .nav-items {
+    float: right;
+  }
+
+  video {
+    width: 100%;
+  }
+
   .grid-r > div.col-3 {
     width: 25%;
   }
@@ -45,18 +88,14 @@
   }
 
   .grid-r > div.col-9 {
-    width: 58.33%;
-  }
-
-  .nav {
-    background-color: black;
-  }
-
-  .nav-items {
-    float: left;
+    width: 75%;
   }
 }
 @media (min-width: 600px) {
+  video {
+    width: 100%;
+  }
+
   .grid-r > div.col-3 {
     width: 25%;
   }
@@ -66,7 +105,7 @@
   }
 
   .grid-r > div.col-9 {
-    width: 58.33%;
+    width: 75%;
   }
 }
 
