@@ -92,8 +92,10 @@ html,body {
   text-align: left;
 }
 
-
 @include desktop {
+    .image-banner{
+        display: none;
+    }
     .navbar {
         overflow: hidden;
         background-color:#037ef3;
@@ -133,6 +135,9 @@ html,body {
 }
 
 @include tablet {
+    .image-banner{
+        display: none;
+    }
     .navbar {
         overflow: hidden;
         background-color:#037ef3;

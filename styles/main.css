@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   bottom: 0;
+  box-sizing: border-box;
 }
 
 .grid-r {
@@ -107,6 +108,10 @@ html, body {
 }
 
 @media (min-width: 981px) {
+  .image-banner {
+    display: none;
+  }
+
   .navbar {
     overflow: hidden;
     background-color: #037ef3;
@@ -149,7 +154,11 @@ html, body {
     width: 75%;
   }
 }
-@media (min-width: 741px) {
+@media (min-width: 679px) {
+  .image-banner {
+    display: none;
+  }
+
   .navbar {
     overflow: hidden;
     background-color: #037ef3;

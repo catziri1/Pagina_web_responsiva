@@ -1,10 +1,13 @@
 var y = document.getElementById("menu");
+var video = document.getElementById("video-banner");
 
 function myFunction2(x) {
     if (x.matches) { // If media query matches
         myFunction();
+        video.style.display='none';
     }else{
       y.className="navbar";
+      video.style.display='block';
     }
   }
   
@@ -20,3 +23,4 @@ function myFunction() {
       y.className = "menu";
     }
   }
+
